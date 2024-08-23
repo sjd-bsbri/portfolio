@@ -85,12 +85,13 @@ const Home = ({ helmetTitle }) => {
               textDecoration: "underline",
               textDecorationColor: "lightgreen",
               mt: 4,
+              fontWeight:"bold"
             }}
           >
             {strings[index % strings.length]}
           </Typography>
         </TextTransition>
-        <Typography variant="h4" color="#000" sx={{ mt: 4, mr: 1 }}>
+        <Typography variant="h4"  color="#000" sx={{ mt: 4, mr: 1,fontWeight:"bold" }}>
           من 
         </Typography>
       </Box>
