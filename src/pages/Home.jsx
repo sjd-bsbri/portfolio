@@ -8,6 +8,7 @@ import TextTransition, { presets } from "react-text-transition";
 
 import { links } from "../constants/Particles";
 import bg002 from "../assets/bg002.png";
+
 import { useTheme } from "@emotion/react";
 
 const Home = ({ helmetTitle }) => {
@@ -69,16 +70,16 @@ const Home = ({ helmetTitle }) => {
         options={links}
       />
       <Box sx={{ display: "flex" }} component="div">
-        <Typography variant={isDownMd ? "h5" : "h3"} color="green">
+        <Typography variant={isDownMd ? "h5" : "h3"} color="pink">
           {"{{"}
         </Typography>
         <Typography
           ref={nameEl}
           variant={isDownMd ? "h5" : "h3"}
-          color="gold"
+          color="skyblue"
           sx={{ fontWeight: "bold" }}
         ></Typography>
-        <Typography variant={isDownMd ? "h5" : "h3"} color="green">
+        <Typography variant={isDownMd ? "h5" : "h3"} color="pink">
           {"}}"}
         </Typography>
       </Box>
@@ -86,10 +87,10 @@ const Home = ({ helmetTitle }) => {
         <TextTransition springConfig={presets.wobbly}>
           <Typography
             variant={isDownMd ? "body1" : "h4"}
-            color="#000"
+            color="#fff"
             sx={{
               textDecoration: "underline",
-              textDecorationColor: "lightgreen",
+              textDecorationColor: "purple",
               mt: 4,
               fontWeight: "bold",
             }}
@@ -99,7 +100,7 @@ const Home = ({ helmetTitle }) => {
         </TextTransition>
         <Typography
           variant={isDownMd ? "body1" : "h4"}
-          color="#000"
+          color="#fff"
           sx={{ mt: 4, mr: 1, fontWeight: "bold" }}
         >
           من
