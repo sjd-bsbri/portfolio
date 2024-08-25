@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3dcaaa78.css",
-    "main.js": "/portfolio/static/js/main.f894d219.js",
-    "static/media/portfolioProject.png": "/portfolio/static/media/portfolioProject.20e6e28243fc82855b7e.png",
-    "static/media/bg002.png": "/portfolio/static/media/bg002.21178c04c0ca9e69cace.png",
+    "main.js": "/portfolio/static/js/main.549559a8.js",
+    "static/media/bg002.png": "/portfolio/static/media/bg002.e8d393202e2077fd2072.png",
     "static/media/map.svg": "/portfolio/static/media/map.0d7639e83802dec1e21368a6a2e777bb.svg",
     "static/media/toplearnhomeProject.png": "/portfolio/static/media/toplearnhomeProject.ca9747c66d290431d8b2.png",
     "static/media/toplearnblogProject.png": "/portfolio/static/media/toplearnblogProject.d8fe1f67f01ccfdbb73e.png",
     "static/media/avatar02.jpg": "/portfolio/static/media/avatar02.239e46168d4579099637.jpg",
+    "static/media/portfolioProject.png": "/portfolio/static/media/portfolioProject.b319674ab1cdc7fc8c74.png",
     "static/media/shopProject.png": "/portfolio/static/media/shopProject.7528cf8d08a3987c2617.png",
     "static/media/nextReactProject.png": "/portfolio/static/media/nextReactProject.84ccaf6cb4572362562a.png",
     "static/media/avatar.jpg": "/portfolio/static/media/avatar.0583b4057e2b1f1e00c3.jpg",
@@ -29,10 +29,10 @@
     "static/media/html5-original.svg": "/portfolio/static/media/html5-original.8664168d5bc90b1a24396f85aadbf623.svg",
     "static/media/material-ui-1.svg": "/portfolio/static/media/material-ui-1.fd510ed8518b192069590b04e2e6348a.svg",
     "main.3dcaaa78.css.map": "/portfolio/static/css/main.3dcaaa78.css.map",
-    "main.f894d219.js.map": "/portfolio/static/js/main.f894d219.js.map"
+    "main.549559a8.js.map": "/portfolio/static/js/main.549559a8.js.map"
   },
   "entrypoints": [
     "static/css/main.3dcaaa78.css",
-    "static/js/main.f894d219.js"
+    "static/js/main.549559a8.js"
   ]
 }
