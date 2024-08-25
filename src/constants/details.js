@@ -14,21 +14,21 @@ export const devWorkInfo = [
     color: "lightcoral",
   },
   {
-    tooltipTitle: "تعداد دوره های من",
+    tooltipTitle: "تعداد کتاب های خوانده شده ",
     icon: <SchoolRounded />,
-    total: 25,
+    total: 56,
     color: "lightskyblue",
   },
   {
     tooltipTitle: "تعداد پروژه های من",
     icon: <DataObjectRounded />,
-    total: 34,
+    total: 10,
     color: "lightslategray",
   },
   {
     tooltipTitle: "تعداد پروژه های به پایان رسیده",
     icon: <DomainVerificationRounded />,
-    total: 12,
+    total: 6,
     color: "lightseagreen",
   },
 ];
@@ -62,39 +62,39 @@ export const devEdu = [
 
 export const userComments = [
   {
-    fullname: "سجاد باصبری",
-    jobTitle: "برنامه نویس فرانت اند",
+    fullname: "مصطفی فهیمی",
+    jobTitle: "برنامه نویس ارشد فرانت اند",
     avatar: userAvatar,
     comment: `
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بطراحان رایانه
               `,
   },
   {
-    fullname: "سجاد باصبری",
-    jobTitle: "برنامه نویس فرانت اند",
+    fullname: "علی فعال",
+    jobTitle: "برنامه نویس بک اند",
     avatar: userAvatar,
     comment: `
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ وع با هدف بهبود اخت بیشتری را برای طراحان رایانه
               `,
   },
   {
-    fullname: "سجاد باصبری",
-    jobTitle: "برنامه نویس فرانت اند",
+    fullname: " مصطفی فهیمی",
+    jobTitle: "برنامه نویس ارشد فرانت اند",
     avatar: userAvatar,
     comment: `
                 لورم ایپسوم متن ساختگی با تولید سادگی ن است. چاپگرها و متون بلکه روزدهای متنوع با هدف بهبود ابزارهای کارا برای طراحان رایانه
               `,
   },
   {
-    fullname: "سجاد باصبری",
-    jobTitle: "برنامه نویس فرانت اند",
+    fullname: "علی فعال ",
+    jobTitle: "برنامه نویس بک اند",
     avatar: userAvatar,
     comment: `
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراح هدف بهبود ابزارتری را برای طراحان رایانه
               `,
   },
   {
-    fullname: "سجاد باصبری",
+    fullname: " علی باصبری",
     jobTitle: "برنامه نویس فرانت اند",
     avatar: userAvatar,
     comment: `
@@ -102,7 +102,7 @@ export const userComments = [
               `,
   },
   {
-    fullname: "سجاد باصبری",
+    fullname: "هادی شریف زاده",
     jobTitle: "برنامه نویس فرانت اند",
     avatar: userAvatar,
     comment: `

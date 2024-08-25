@@ -4,7 +4,7 @@ import {
     TextSnippetRounded,
     MessageRounded,
     ConnectWithoutContactRounded,
-    SchoolRounded,
+    GradingRounded,
   } from "@mui/icons-material";
   
   const tabProps = (index) => {
@@ -19,8 +19,8 @@ import {
       { label: "صفحه اصلی", icon: <HomeRounded />, ...tabProps(0) },
       { label: "درباره من", icon: <FaceRounded />, ...tabProps(1) },
       { label: "بایوگرافی من", icon: <TextSnippetRounded />, ...tabProps(2) },
-      { label: "نمونه کارهای من", icon: <SchoolRounded />, ...tabProps(3) },
-      { label: "نظرات دوستان", icon: <MessageRounded />, ...tabProps(4) },
+      { label: "نمونه کارهای من", icon: <GradingRounded />, ...tabProps(3) },
+      { label: " نظرات دوستان من" , icon: <MessageRounded />, ...tabProps(4) },
       {
         label: "ارتباط با من",
         icon: <ConnectWithoutContactRounded />,

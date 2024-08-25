@@ -3,8 +3,11 @@ import {
   CssIcon,
   JsIcon,
   ReactIcon,
-  NodeIcon,
   GitIcon,
+  TailwindIcon,
+  MUIIcon,
+  NextIcon,
+  LaravelIcon,
 } from "../assets/icons";
 
 export const devSkills = {
@@ -26,22 +29,42 @@ export const devSkills = {
     icon: JsIcon,
     color: "warning",
   },
-  reactSkill: {
+  muiSkill: {
     id: 3,
+    name: "Mui",
+    icon: MUIIcon,
+    color: "primary",
+  },
+ 
+  reactSkill: {
+    id: 4,
     name: "React",
     icon: ReactIcon,
     color: "info",
   },
-  nodeSkill: {
-    id: 4,
-    name: "NodeJS",
-    icon: NodeIcon,
-    color: "success",
+  tailwindSkill: {
+    id: 5,
+    name: "Tailwind",
+    icon: TailwindIcon,
+    color: "primary",
+  },
+  
+  nextSkill: {
+    id: 6,
+    name: "Next",
+    icon: NextIcon,
+    color: "warning",
   },
   gitSkill: {
-    id: 5,
+    id: 7,
     name: "Git",
     icon: GitIcon,
+    color: "primary",
+  },
+  laravelSkill: {
+    id: 8,
+    name: "Laravel",
+    icon: LaravelIcon,
     color: "secondary",
   },
 };

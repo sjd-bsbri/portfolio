@@ -1,6 +1,7 @@
-import { Card, CardContent, Avatar, Typography, Box } from "@mui/material";
+import { Card, CardContent, Avatar, Typography, Box, useMediaQuery } from "@mui/material";
 import { userComments } from "../../constants/details";
 import Slider from "react-slick";
+import { useTheme } from "@emotion/react";
 
 const CommentsSlider = () => {
   const options = {
@@ -8,14 +9,17 @@ const CommentsSlider = () => {
     infinite: true,
     autoplay: true,
     arrows: false,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 10000,
     pauseOnHover: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 2,
     cssEase: "linear",
     rows: 2,
     slidesPerRow: 1,
   };
+  const theme = useTheme();
+  const isDownSm = useMediaQuery(theme.breakpoints.down("sm"));
+
 
   return (
     <Box
@@ -24,7 +28,7 @@ const CommentsSlider = () => {
     >
       <Slider {...options}>
         {userComments.map((user, index) => (
-          <Box key={index} component="div" sx={{ justifyContent: "center" }}>
+          <Box key={index} component="div" sx={{ justifyContent: "center",mt:"10px" }}>
             <Avatar
               src={user.avatar}
               variant="rounded"
@@ -45,7 +49,7 @@ const CommentsSlider = () => {
             <Card
               sx={{
                 backgroundColor: "lightseagreen",
-                width: 1 / 2,
+                width: isDownSm? 1:1/5,
                 margin: "0 auto",
                 borderRadius: 5,
               }}

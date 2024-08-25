@@ -1,3 +1,4 @@
+import { useTheme } from "@emotion/react";
 import {
   Divider,
   Chip,
@@ -5,8 +6,13 @@ import {
   Typography,
   LinearProgress,
   Badge,
+  useMediaQuery,
 } from "@mui/material";
+
 const Skill = ({ name, icon, color, value }) => {
+  const theme = useTheme();
+  const isDownMd = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <>
       <Divider
@@ -17,7 +23,7 @@ const Skill = ({ name, icon, color, value }) => {
           icon={<Box component="img" src={icon} sx={{ height: 30 }} />}
           color={color}
           label={name}
-          sx={{ color: "text.primary", p: 3 }}
+          sx={{ color: "text.primary", p: 3 ,fontSize:isDownMd?"13px":"16.5"}}
         />
       </Divider>
       <Box sx={{ display: "flex", alignItems: "center" }}>

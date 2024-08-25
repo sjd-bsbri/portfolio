@@ -13,7 +13,7 @@ import { devEdu } from "../../constants/details";
 
 const DevExpTimeline = ({ loading }) => {
   return (
-    <Timeline position="right" sx={{ direction: "ltr" }}>
+    <Timeline position="right"  sx={{ direction: "ltr" }}>
       {devEdu.map((item, index) => (
         <Slide
           key={index}
@@ -34,7 +34,7 @@ const DevExpTimeline = ({ loading }) => {
               <Typography variant="caption" color="text.primary">
                 {item.year}
               </Typography>
-              <Typography variant="body1" color="text.primary">
+              <Typography variant="body1"  color="text.primary">
                 {item.cert}
               </Typography>
               <Typography variant="body2" color="text.primary">

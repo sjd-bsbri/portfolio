@@ -1,6 +1,6 @@
-export { default as EcmaScript } from "./ECMASCRIPT_Course.jpg";
-export { default as NodeJs } from "./NodeJs_Course.jpg";
-export { default as ReactJs } from "./ReactJs_Course.jpg";
-export { default as ReactNative } from "./ReactNative_Course.jpg";
-export { default as VSCode } from "./VSCode_Course.jpg";
-export { default as Strapi } from "./Strapi_Course.jpg";
+export { default as Eboo } from "./ebooProject.png";
+export { default as Portfolio  } from "./portfolioProject.png";
+export { default as Shop } from "./shopProject.png";
+export { default as TopBlog } from "./toplearnblogProject.png";
+export { default as TopHome } from "./toplearnhomeProject.png";
+export { default as Next } from "./nextReactProject.png";
