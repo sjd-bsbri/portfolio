@@ -1,34 +1,38 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3dcaaa78.css",
-    "main.js": "/portfolio/static/js/main.b5ec7aeb.js",
-    "static/media/bg02.jpeg": "/portfolio/static/media/bg02.88d9dd98e6b8e800b134.jpeg",
+    "main.js": "/portfolio/static/js/main.f894d219.js",
+    "static/media/portfolioProject.png": "/portfolio/static/media/portfolioProject.20e6e28243fc82855b7e.png",
+    "static/media/bg002.png": "/portfolio/static/media/bg002.21178c04c0ca9e69cace.png",
     "static/media/map.svg": "/portfolio/static/media/map.0d7639e83802dec1e21368a6a2e777bb.svg",
+    "static/media/toplearnhomeProject.png": "/portfolio/static/media/toplearnhomeProject.ca9747c66d290431d8b2.png",
+    "static/media/toplearnblogProject.png": "/portfolio/static/media/toplearnblogProject.d8fe1f67f01ccfdbb73e.png",
     "static/media/avatar02.jpg": "/portfolio/static/media/avatar02.239e46168d4579099637.jpg",
+    "static/media/shopProject.png": "/portfolio/static/media/shopProject.7528cf8d08a3987c2617.png",
+    "static/media/nextReactProject.png": "/portfolio/static/media/nextReactProject.84ccaf6cb4572362562a.png",
     "static/media/avatar.jpg": "/portfolio/static/media/avatar.0583b4057e2b1f1e00c3.jpg",
-    "static/media/NodeJs_Course.jpg": "/portfolio/static/media/NodeJs_Course.9852271d56db95e8c10a.jpg",
-    "static/media/Strapi_Course.jpg": "/portfolio/static/media/Strapi_Course.2237099857ccf0210dba.jpg",
-    "static/media/ECMASCRIPT_Course.jpg": "/portfolio/static/media/ECMASCRIPT_Course.d428e2f25f4b652cc2c5.jpg",
-    "static/media/VSCode_Course.jpg": "/portfolio/static/media/VSCode_Course.5ace129074cb3d9bba21.jpg",
-    "static/media/ReactJs_Course.jpg": "/portfolio/static/media/ReactJs_Course.78e31f9fefccf5c0b9fb.jpg",
-    "static/media/ReactNative_Course.jpg": "/portfolio/static/media/ReactNative_Course.003dacb162458b09c716.jpg",
     "static/media/user.png": "/portfolio/static/media/user.e5117e8e0cea57c9a92f.png",
+    "static/media/ebooProject.png": "/portfolio/static/media/ebooProject.e54a23b97e4ac6d09c5a.png",
     "static/media/react-original.svg": "/portfolio/static/media/react-original.4e0c97009b885bfa75c5412262a46f5f.svg",
     "static/media/slick.svg": "/portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/laravel-2.svg": "/portfolio/static/media/laravel-2.ba995bd47e3a7cc141cc1c9aaa1ac583.svg",
     "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/nodejs-original.svg": "/portfolio/static/media/nodejs-original.10c9e2aa0ca7edf36fceae25fec038a1.svg",
+    "static/media/next-js.svg": "/portfolio/static/media/next-js.1b2b52c044b9dcea988e68b966864c5a.svg",
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "static/media/javascript-original.svg": "/portfolio/static/media/javascript-original.4c1b5332c1b1057928f6f06cf972c91c.svg",
+    "static/media/tailwindcss.svg": "/portfolio/static/media/tailwindcss.68603ef4173093c409dcd59733df7ecf.svg",
     "static/media/css3-original.svg": "/portfolio/static/media/css3-original.39769a8bd378bf410d6b381a8d88fa35.svg",
     "static/media/git-original.svg": "/portfolio/static/media/git-original.c08353563539c6459b353f29d8dd7bf2.svg",
     "index.html": "/portfolio/index.html",
     "static/media/html5-original.svg": "/portfolio/static/media/html5-original.8664168d5bc90b1a24396f85aadbf623.svg",
+    "static/media/material-ui-1.svg": "/portfolio/static/media/material-ui-1.fd510ed8518b192069590b04e2e6348a.svg",
     "main.3dcaaa78.css.map": "/portfolio/static/css/main.3dcaaa78.css.map",
-    "main.b5ec7aeb.js.map": "/portfolio/static/js/main.b5ec7aeb.js.map"
+    "main.f894d219.js.map": "/portfolio/static/js/main.f894d219.js.map"
   },
   "entrypoints": [
     "static/css/main.3dcaaa78.css",
-    "static/js/main.b5ec7aeb.js"
+    "static/js/main.f894d219.js"
   ]
 }
