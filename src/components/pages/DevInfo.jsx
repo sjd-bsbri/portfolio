@@ -30,7 +30,7 @@ const DevInfo = () => {
     <>
       <Info>نام و نام خانوادگی : سجاد باصبری</Info>
       <Info>تحصیلات : کارشناسی مهندسی کامپیوتر</Info>
-      <Info>شهر : قوچان</Info>
+      <Info>شهر : مشهد</Info>
       <Info>sajad@chmail.ir : آدرس ایمیل</Info>
       <Info>شماره موبایل : ۰۹۱۳۹۳۱۳۹۳۳</Info>
     </>
