@@ -27,7 +27,7 @@ const SidebarFooter = () => {
       </Typography>
 
       <Typography variant="caption" color="text.primary" sx={{ mt: 2 }}>
-       کپی رایت ۱۴۰۳{" "}
+       ساخته شده درسال ۱۴۰۳{" "}
         <CopyrightRounded sx={{ verticalAlign: "middle", height: 16 }} />
       </Typography>
       <SocialMediaIcons />
