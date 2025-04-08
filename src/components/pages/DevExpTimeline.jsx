@@ -8,12 +8,16 @@ import {
 } from "@mui/lab";
 
 import { HomeRepairServiceRounded } from "@mui/icons-material";
-import { Typography, Slide } from "@mui/material";
+import { Typography, Slide, useMediaQuery } from "@mui/material";
 import { devEdu } from "../../constants/details";
+import { useTheme } from "@emotion/react";
 
 const DevExpTimeline = ({ loading }) => {
+  const theme = useTheme();
+  const isDownMd = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
-    <Timeline position="right"  sx={{ direction: "ltr" }}>
+    <Timeline position="right" sx={{ direction: "ltr", p: isDownMd ? 0 : 2 }}>
       {devEdu.map((item, index) => (
         <Slide
           key={index}
@@ -31,13 +35,13 @@ const DevExpTimeline = ({ loading }) => {
               {index !== 3 ? <TimelineConnector /> : null}
             </TimelineSeparator>
             <TimelineContent>
-              <Typography variant="caption" color="text.primary">
+              <Typography variant={isDownMd ? "caption" : "body2"} color="text.primary">
                 {item.year}
               </Typography>
-              <Typography variant="body1"  color="text.primary">
+              <Typography variant={isDownMd ? "body2" : "body1"} color="text.primary">
                 {item.cert}
               </Typography>
-              <Typography variant="body2" color="text.primary">
+              <Typography variant={isDownMd ? "caption" : "body2"} color="text.primary">
                 {item.major}
               </Typography>
               <Typography variant="caption" color="text.primary">

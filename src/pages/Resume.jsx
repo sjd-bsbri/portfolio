@@ -44,7 +44,7 @@ const Resume = ({ helmetTitle }) => {
         />
 
         <Grid container sx={{ mt: 4 }}>
-          <Grid xs={6}>
+          <Grid xs={12} sm={12} md={6}>
             <CustomDivider
               align="center"
               bColor="warning.main"
@@ -54,7 +54,7 @@ const Resume = ({ helmetTitle }) => {
             />
             <DevExpTimeline loading={loading} />
           </Grid>
-          <Grid xs={6}>
+          <Grid xs={12} sm={12} md={6}>
             <CustomDivider
               align="center"
               bColor="info.main"
@@ -62,7 +62,6 @@ const Resume = ({ helmetTitle }) => {
               cColor="info"
               text="تحصیلات"
             />
-
             <DevEduTimeline loading={loading} />
           </Grid>
         </Grid>
