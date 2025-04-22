@@ -55,7 +55,7 @@ const ShowCourses = ({ loading }) => {
                   color="primary"
                   target="_blank"
                 >
-                  اطلاعات بیشتر
+                   مشاهده پروژه
                 </Button>
               </CardActions>
             </Card>
