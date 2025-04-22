@@ -17,39 +17,39 @@ const Skills = () => {
     const timer = setInterval(() => {
       setJavascript((oldProgress) => {
         const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 55);
+        return Math.min(oldProgress + diff, 70);
       });
 
       setHtml((oldProgress) => {
         const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 70);
+        return Math.min(oldProgress + diff, 80);
       });
 
       setCss((oldProgress) => {
         const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 65);
+        return Math.min(oldProgress + diff, 75);
       });
 
       setLaravel((oldProgress) => {
         const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 20);
+        return Math.min(oldProgress + diff, 40);
       });
       setMui((oldProgress) => {
         const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 70);
+        return Math.min(oldProgress + diff, 75);
       });
       setNext((oldProgress) => {
         const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 45);
+        return Math.min(oldProgress + diff, 60);
       });
       setTailwind((oldProgress) => {
         const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 60);
+        return Math.min(oldProgress + diff, 70);
       });
 
       setReactJs((oldProgress) => {
         const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 55);
+        return Math.min(oldProgress + diff, 65);
       });
 
       // setNodeJs((oldProgress) => {
@@ -59,7 +59,7 @@ const Skills = () => {
 
       setGit((oldProgress) => {
         const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 40);
+        return Math.min(oldProgress + diff, 55);
       });
     }, 100);
 
