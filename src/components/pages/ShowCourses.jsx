@@ -30,20 +30,29 @@ const GlassTooltip = ({ children, technologies }) => {
       title={
         <Paper
           sx={{
-            padding: 2,
+            padding: 1.5,
             backgroundColor: alpha(isDarkMode ? '#242424' : '#fff', 0.85),
             backdropFilter: 'blur(10px)',
             borderRadius: 2,
             boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
             border: '1px solid rgba(255, 255, 255, 0.18)',
-            minWidth: {xs: '200px', sm: '250px'},
+            minWidth: {xs: '180px', sm: '220px', md: '250px'},
+            maxWidth: {xs: '260px', sm: '320px', md: '450px'},
             direction: 'rtl', // RTL support
+            overflowX: 'hidden',
+            overflowY: 'auto',
+            maxHeight: {xs: '300px', sm: '400px'},
           }}
         >
-          <Typography variant="subtitle1" fontWeight="bold" gutterBottom>
+          <Typography variant="subtitle2" fontWeight="bold" gutterBottom>
             تکنولوژی های استفاده شده:
           </Typography>
-          <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, justifyContent: 'flex-start' }}>
+          <Box sx={{ 
+            display: 'flex', 
+            flexWrap: 'wrap', 
+            gap: {xs: 0.5, sm: 1}, 
+            justifyContent: 'flex-start'
+          }}>
             {technologies.map((tech, i) => (
               <Box 
                 key={i} 
@@ -51,8 +60,9 @@ const GlassTooltip = ({ children, technologies }) => {
                   display: 'flex', 
                   alignItems: 'center', 
                   mb: 1,
-                  px: 1.5,
-                  py: 0.8,
+                  px: {xs: 1, sm: 1.5},
+                  py: {xs: 0.5, sm: 0.8},
+                  ml: {xs: 0.5, sm: 1},
                   borderRadius: 2,
                   backgroundColor: alpha(tech.color || (isDarkMode ? '#ffffff' : '#000000'), 0.1),
                   border: `1px solid ${alpha(tech.color || (isDarkMode ? '#ffffff' : '#000000'), 0.2)}`,
@@ -60,15 +70,25 @@ const GlassTooltip = ({ children, technologies }) => {
                   '&:hover': {
                     backgroundColor: alpha(tech.color || (isDarkMode ? '#ffffff' : '#000000'), 0.2),
                     transform: 'translateY(-2px)',
-                  }
+                  },
+                  fontSize: {xs: '0.75rem', sm: '0.875rem'}
                 }}
               >
                 {tech.icon && (
-                  <Box sx={{ ml: 0.7, display: 'flex', alignItems: 'center' }}>
+                  <Box sx={{ 
+                    ml: {xs: 0.5, sm: 0.7}, 
+                    display: 'flex', 
+                    alignItems: 'center',
+                    '& svg': {
+                      fontSize: {xs: '1rem', sm: '1.25rem'}
+                    }
+                  }}>
                     {tech.icon}
                   </Box>
                 )}
-                <Typography variant="body2">{tech.name}</Typography>
+                <Typography variant="body2" sx={{ fontSize: {xs: '0.7rem', sm: '0.8rem', md: '0.875rem'} }}>
+                  {tech.name}
+                </Typography>
               </Box>
             ))}
           </Box>
@@ -79,11 +99,28 @@ const GlassTooltip = ({ children, technologies }) => {
       TransitionComponent={Slide}
       enterDelay={400}
       leaveDelay={200}
+      PopperProps={{
+        modifiers: [
+          {
+            name: 'preventOverflow',
+            options: {
+              boundary: document.body,
+            },
+          },
+          {
+            name: 'offset',
+            options: {
+              offset: [0, 10],
+            },
+          },
+        ],
+      }}
       componentsProps={{
         tooltip: {
           sx: {
             bgcolor: 'transparent',
-            maxWidth: {xs: '280px', sm: '350px', md: '450px'},
+            maxWidth: {xs: '95vw', sm: '350px', md: '450px'},
+            p: 0,
             '& .MuiTooltip-arrow': {
               color: alpha(isDarkMode ? '#242424' : '#fff', 0.85),
             },
