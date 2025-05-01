@@ -9,17 +9,17 @@ const Info = ({ children }) => {
 
   return (
     <Typography
-    // variant={isDownMd ? "body2" : "body1"}
+      // variant={isDownMd ? "body2" : "body1"}
       color="text.primary"
       textAlign="left"
-      sx={{ mt: 2, fontSize:isDownMd?"13px":"22px" }}
+      sx={{ mt: 2, fontSize: isDownMd ? "13px" : "22px" }}
     >
       {children}
       <KeyboardArrowLeftRounded
-        sx={{ 
+        sx={{
           verticalAlign: "middle",
-           color: "primary.main",
-          }}
+          color: "primary.main",
+        }}
       />
     </Typography>
   );
@@ -31,7 +31,8 @@ const DevInfo = () => {
       <Info>نام و نام خانوادگی : سجاد باصبری</Info>
       <Info>تحصیلات : کارشناسی مهندسی کامپیوتر</Info>
       <Info>شهر : مشهد</Info>
-      <Info>sajad@chmail.ir : آدرس ایمیل</Info>
+      <Info>abccnn09@gmail.com
+        : آدرس ایمیل</Info>
       <Info>شماره موبایل : ۰۹۱۳۹۳۱۳۹۳۳</Info>
     </>
   );
