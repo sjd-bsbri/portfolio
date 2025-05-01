@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3dcaaa78.css",
-    "main.js": "/portfolio/static/js/main.a8fce5a9.js",
+    "main.js": "/portfolio/static/js/main.464812f5.js",
     "static/media/bg002.png": "/portfolio/static/media/bg002.e8d393202e2077fd2072.png",
     "static/media/toplearnhomeProject.png": "/portfolio/static/media/toplearnhomeProject.ca9747c66d290431d8b2.png",
     "static/media/toplearnblogProject.png": "/portfolio/static/media/toplearnblogProject.d8fe1f67f01ccfdbb73e.png",
@@ -29,10 +29,10 @@
     "static/media/html5-original.svg": "/portfolio/static/media/html5-original.8664168d5bc90b1a24396f85aadbf623.svg",
     "static/media/material-ui-1.svg": "/portfolio/static/media/material-ui-1.fd510ed8518b192069590b04e2e6348a.svg",
     "main.3dcaaa78.css.map": "/portfolio/static/css/main.3dcaaa78.css.map",
-    "main.a8fce5a9.js.map": "/portfolio/static/js/main.a8fce5a9.js.map"
+    "main.464812f5.js.map": "/portfolio/static/js/main.464812f5.js.map"
   },
   "entrypoints": [
     "static/css/main.3dcaaa78.css",
-    "static/js/main.a8fce5a9.js"
+    "static/js/main.464812f5.js"
   ]
 }
