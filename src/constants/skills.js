@@ -16,7 +16,7 @@ export const devSkills = {
     id: 0,
     name: "HTML",
     icon: HtmlIcon,
-    color: "primary",
+    color: "error",
   },
   cssSkill: {
     id: 1,
@@ -47,14 +47,14 @@ export const devSkills = {
     id: 5,
     name: "Tailwind",
     icon: TailwindIcon,
-    color: "primary",
+    color: "info",
   },
   
   nextSkill: {
     id: 6,
     name: "Next",
     icon: NextIcon,
-    color: "warning",
+    color: "secondary",
   },
   gitSkill: {
     id: 7,
@@ -72,6 +72,6 @@ export const devSkills = {
     id: 9,
     name: "Typescript",
     icon: TypescriptIcon,
-    color: "info",
+    color: "primary",
   },
 };
