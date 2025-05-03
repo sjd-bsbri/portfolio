@@ -18,7 +18,7 @@ const Home = ({ helmetTitle }) => {
   const [index, setIndex] = useState(0);
   const nameEl = useRef(null);
 
-  const strings = [" برنامه نویس هستم", "🧑🏻‍💻 توسعه دهنده فرانت اند هستم"];
+  const strings = ["🤍 برنامه نویس هستم", " 👨‍💻 توسعه دهنده فرانت اند هستم"];
 
   useEffect(() => {
     const typedName = new Typed(nameEl.current, {

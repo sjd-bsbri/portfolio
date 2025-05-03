@@ -108,7 +108,7 @@ const Contact = ({ helmetTitle }) => {
               >
                 👋{" "}
                 <a
-                  href="mailto:sjd.bs@sbmail.ir"
+                  href="mailto:abccnn09@gmail.com"
                   alt="email"
                   style={{
                     color: "tomato",
