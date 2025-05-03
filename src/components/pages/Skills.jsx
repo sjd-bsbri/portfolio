@@ -11,7 +11,7 @@ const Skills = () => {
   const [mui, setMui] = useState(0);
   const [next, setNext] = useState(0);
   const [tailwind, setTailwind] = useState(0);
-
+  const [typescript, setTypescript] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -51,12 +51,11 @@ const Skills = () => {
         const diff = Math.random() * 10;
         return Math.min(oldProgress + diff, 65);
       });
-
-      // setNodeJs((oldProgress) => {
-      //   const diff = Math.random() * 10;
-      //   return Math.min(oldProgress + diff, 86);
-      // });
-
+      setTypescript((oldProgress) => {
+        const diff = Math.random() * 10;
+        return Math.min(oldProgress + diff, 50);
+      });
+     
       setGit((oldProgress) => {
         const diff = Math.random() * 10;
         return Math.min(oldProgress + diff, 55);
@@ -69,7 +68,7 @@ const Skills = () => {
   }, []);
 
   const { htmlSkill, cssSkill, reactSkill, jsSkill, 
-     gitSkill,laravelSkill,muiSkill,nextSkill,tailwindSkill } =
+     gitSkill,laravelSkill,muiSkill,nextSkill,tailwindSkill,typescriptSkill  } =
     devSkills;
   return (
     <>
@@ -91,6 +90,19 @@ const Skills = () => {
         color={jsSkill.color}
         value={javascript}
       />
+      <Skill
+        name={typescriptSkill.name}
+        icon={typescriptSkill.icon}
+        color={typescriptSkill.color}
+        value={typescript}
+      />
+
+<Skill
+        name={reactSkill.name}
+        icon={reactSkill.icon}
+        color={reactSkill.color}
+        value={reactJs}
+      />
 
 <Skill
         name={muiSkill.name}
@@ -98,12 +110,7 @@ const Skills = () => {
         color={muiSkill.color}
         value={mui}
       />
-      <Skill
-        name={reactSkill.name}
-        icon={reactSkill.icon}
-        color={reactSkill.color}
-        value={reactJs}
-      />
+     
 
 <Skill
         name={tailwindSkill.name}

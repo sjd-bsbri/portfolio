@@ -8,6 +8,7 @@ import {
   MUIIcon,
   NextIcon,
   LaravelIcon,
+  TypescriptIcon,
 } from "../assets/icons";
 
 export const devSkills = {
@@ -66,5 +67,11 @@ export const devSkills = {
     name: "Laravel",
     icon: LaravelIcon,
     color: "secondary",
+  },
+  typescriptSkill: {
+    id: 9,
+    name: "Typescript",
+    icon: TypescriptIcon,
+    color: "info",
   },
 };
