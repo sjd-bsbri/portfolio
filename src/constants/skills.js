@@ -60,7 +60,7 @@ export const devSkills = {
     id: 7,
     name: "Git",
     icon: GitIcon,
-    color: "primary",
+    color: "warning",
   },
   laravelSkill: {
     id: 8,

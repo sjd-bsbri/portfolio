@@ -105,6 +105,13 @@ const Skills = () => {
       />
 
 <Skill
+        name={nextSkill.name}
+        icon={nextSkill.icon}
+        color={nextSkill.color}
+        value={next}
+      />
+
+<Skill
         name={muiSkill.name}
         icon={muiSkill.icon}
         color={muiSkill.color}
@@ -119,12 +126,7 @@ const Skills = () => {
         value={tailwind}
       />
 
-<Skill
-        name={nextSkill.name}
-        icon={nextSkill.icon}
-        color={nextSkill.color}
-        value={next}
-      />
+
 
      
       <Skill
