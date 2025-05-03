@@ -4,23 +4,26 @@ import {
   FaHtml5, 
   FaCss3Alt, 
   FaJsSquare, 
-  FaNodeJs,
-  FaDatabase,
   FaGithub,
   FaCode,
+  FaCreditCard,
 } from 'react-icons/fa';
 import { 
   SiTypescript, 
   SiNextdotjs, 
   SiTailwindcss, 
-  SiMaterialui,
+  SiMui,
   SiRedux,
-  SiMongodb,
-  SiFirebase,
+  SiPrisma,
+
+  SiZod
 } from 'react-icons/si';
+import { GiBearFace } from "react-icons/gi";
+  
 
 
-import { MdAdminPanelSettings,MdPhonelink } from 'react-icons/md';
+
+import { MdAdminPanelSettings,MdPhonelink, MdVerified,MdOutlineDiamond } from 'react-icons/md';
 
 const TechIcon = ({ tech, size = 24 }) => {
   const getIcon = () => {
@@ -47,17 +50,10 @@ const TechIcon = ({ tech, size = 24 }) => {
         return <SiTailwindcss size={size} color="#06B6D4" />;
       case 'material-ui':
       case 'mui':
-        return <SiMaterialui size={size} color="#007FFF" />;
+        return <SiMui  size={size} color="#007FFF" />;
       case 'redux':
         return <SiRedux size={size} color="#764ABC" />;
-      case 'node':
-      case 'nodejs':
-        return <FaNodeJs size={size} color="#339933" />;
-      case 'mongodb':
-      case 'mongo':
-        return <SiMongodb size={size} color="#47A248" />;
-      case 'firebase':
-        return <SiFirebase size={size} color="#FFCA28" />;
+     
       case 'responsive':
         return <MdPhonelink size={size} color="#0098E6" />;
       case 'git':
@@ -66,9 +62,18 @@ const TechIcon = ({ tech, size = 24 }) => {
       case 'user-panel':
       case 'user':
         return <MdAdminPanelSettings size={size} color="#FF5722" />;
-      case 'database':
+      case 'prisma':
       case 'db':
-        return <FaDatabase size={size} color="#4479A1" />;
+        return <SiPrisma  size={size} color="#FFFFFF" />;
+      case 'zarinpal':
+      case 'payment':
+        return <FaCreditCard size={size} color="#FFD700" />;
+      case 'zod':
+      case 'validation':
+        return <SiZod size={size} color="#3068B7" />;
+      case 'zustand':
+      case 'state-management':
+        return <GiBearFace size={size} color="#49443E" />;
       default:
         return <FaCode size={size} color="#607D8B" />;
     }

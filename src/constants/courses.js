@@ -9,7 +9,7 @@ export const courses = [
         image: Shop,
         link: "https://sjd-bsbri.github.io/shop",
         info: " این پروژه با ریکت نوشته شده . امکان اضافه کردن ، حذف و فیلتر محصولات در این پروژه وجود دارد",
-        technologies: ["react", "css", "html", "javascript","responsive"]
+        technologies: ["react","javascript", "html","css", "responsive"]
     },
    
     {
@@ -18,7 +18,7 @@ export const courses = [
         image: Portfolio,
         link: "https://sjd-bsbri.github.io/portfolio",
         info: `این پروژه با ریکت و متریال یو آی نوشته شده . در این پروژه از بسیاری از کامپوننت های متریال یو آی استفاده شده و امکان اعتبارسنجی در بخش فرم ها نیز وجود دارد`,
-        technologies: ["react", "material-ui", "javascript","responsive"]
+        technologies: ["react", "material-ui", "javascript","html","responsive"]
     },
     {
         id: 3,
@@ -26,7 +26,7 @@ export const courses = [
         image: Next,
         link: "https://h-quchan.ir/",
         info: `این پروژه با نکست، ریکت، تایپ اسکریپت و تیلویند نوشته شده. این پروژه دارای درگاه پرداخت زرین پال و کاملا ریسپانسیو است`,
-        technologies: ["nextjs", "react", "typescript", "tailwind","responsive"]
+        technologies: ["nextjs", "react", "typescript", "tailwind", "zarinpal", "zod", "zustand","prisma","responsive"]
     },
    
 
@@ -54,7 +54,7 @@ export const courses = [
         image: Eboo,
         link: "https://sjd-bsbri.github.io/eboo",
         info: ` این پروژه با ریکت و متریال یو آی نوشته شده . از ویژگی این پروژه ، داشتن پنل ادمین هست که با وارد کردن رمز عبور ، امکان ورود به پنل ادمین وجود دارد `,
-        technologies: ["react", "material-ui", "user-panel","responsive"]
+        technologies: ["react", "material-ui","javascript", "user-panel","responsive"]
     },
   
     
