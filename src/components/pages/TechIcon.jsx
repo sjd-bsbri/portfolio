@@ -19,7 +19,7 @@ import {
   SiZod
 } from 'react-icons/si';
 import { GiBearFace } from "react-icons/gi";
-  
+import { FcGoogle } from "react-icons/fc";
 
 
 
@@ -30,6 +30,8 @@ const TechIcon = ({ tech, size = 24 }) => {
     switch (tech.toLowerCase()) {
       case 'react':
         return <FaReact size={size} color="#61DAFB" />;
+        case 'authentication':
+          return <FcGoogle size={size}  />;
       case 'html':
       case 'html5':
         return <FaHtml5 size={size} color="#E34F26" />;

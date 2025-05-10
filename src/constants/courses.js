@@ -30,15 +30,6 @@ export const courses = [
     },
    
 
-
-    {
-        id: 4,
-        title: "پروژه بلاگ سایت تاپ لرن  ",
-        image: TopBlog,
-        link: "https://sjd-bsbri.github.io/toplearn-blog",
-        info: `   در این پروژه از ریکت و متریال یو آی استفاده شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با متریال یو آی به صورت کاملا ریسپانسیو طراحی شده`,
-        technologies: ["react", "material-ui", "responsive"]
-    },
     {
         id: 5,  
         title: "پروژه صفحه اصلی سایت تاپ لرن",
@@ -48,6 +39,16 @@ export const courses = [
         technologies: ["tailwind", "html", "css", "responsive"]
     },
 
+
+    {
+        id: 4,
+        title: "پروژه بلاگ سایت تاپ لرن  ",
+        image: TopBlog,
+        link: "https://sjd-bsbri.github.io/toplearn-blog",
+        info: `   در این پروژه از ریکت و متریال یو آی استفاده شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با متریال یو آی به صورت کاملا ریسپانسیو طراحی شده`,
+        technologies: ["react", "material-ui", "javascript", "user-panel","authentication", "responsive"]
+    },
+    
     {
         id: 6,
         title: "    پروژه سایت ایبو ",
