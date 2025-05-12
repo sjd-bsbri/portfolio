@@ -48,7 +48,7 @@ const DevEduTimeline = ({ loading }) => {
                   <SchoolRounded color="info" fontSize={isDownSm ? "small" : "medium"} />
                 </TimelineDot>
               </Zoom>
-              {index !== 3 ? (
+              {index !== devEdu.length - 1 ? (
                 <TimelineConnector 
                   sx={{ 
                     bgcolor: 'info.light', 

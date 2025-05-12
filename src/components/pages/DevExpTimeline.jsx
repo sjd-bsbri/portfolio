@@ -9,7 +9,7 @@ import {
 
 import { HomeRepairServiceRounded, BusinessCenterOutlined, PlaceOutlined, CalendarTodayOutlined } from "@mui/icons-material";
 import { Typography, Slide, useMediaQuery, Paper, Box, Chip, Zoom } from "@mui/material";
-import { devEdu } from "../../constants/details";
+import { devExp } from "../../constants/details";
 import { useTheme } from "@emotion/react";
 
 const DevExpTimeline = ({ loading }) => {
@@ -19,7 +19,7 @@ const DevExpTimeline = ({ loading }) => {
 
   return (
     <Timeline position={isDownSm ? "right" : "alternate"} sx={{ direction: "ltr", p: isDownMd ? 1 : 2, my: 2 }}>
-      {devEdu.map((item, index) => (
+      {devExp.map((item, index) => (
         <Slide
           key={index}
           direction={index % 2 === 0 ? "right" : "left"}
@@ -48,7 +48,7 @@ const DevExpTimeline = ({ loading }) => {
                   <HomeRepairServiceRounded color="warning" fontSize={isDownSm ? "small" : "medium"} />
                 </TimelineDot>
               </Zoom>
-              {index !== 3 ? (
+              {index !== devExp.length - 1 ? (
                 <TimelineConnector 
                   sx={{ 
                     bgcolor: 'warning.light', 

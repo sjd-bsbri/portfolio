@@ -4,7 +4,6 @@ import {
   DataObjectRounded,
   DomainVerificationRounded,
 } from "@mui/icons-material";
-import userAvatar from "../assets/user.png";
 
 export const devWorkInfo = [
   {
@@ -35,29 +34,56 @@ export const devWorkInfo = [
 
 export const devEdu = [
   {
-    year: "۱۳۸۹ - ۱۳۸۸",
+    year: "۱۳۹۳ - ۱۳۹۲",
     cert: "دیپلم",
     major: "رشته تجربی",
     place: " دبیرستان دکتر شریعتی",
   },
   {
-    year: "۱۳۹۳ - ۱۳۹۰",
+    year: "۱۴۰۱ - ۱۳۹۷",
     cert: "کاردانی",
     major: "رشته کامپیوتر گرایش نرم افزار",
     place: "دانشگاه آزاد اسلامی",
   },
   {
-    year: "۱۴۰۱ - ۱۳۹۸",
+    year: "۱۴۰۱ - ۱۳۹۷",
     cert: "کارشناسی",
     major: "رشته کامپیوتر گرایش نرم افزار",
     place: "دانشگاه آزاد اسلامی",
   },
+  // {
+  //   year: " ... - ۱۴۰۱",
+  //   cert: "کارشناسی ",
+  //   major: "رشته کامپیوتر",
+  //   place: "دانشگاه آزاد اسلامی",
+  // },
+];
+
+export const devExp = [
   {
-    year: " ... - ۱۴۰۱",
-    cert: "کارشناسی ارشد",
-    major: "رشته کامپیوتر گرایش  هوش مصنوعی",
+    year: "۱۳۹۳ - ۱۳۹۲",
+    cert: "دیپلم",
+    major: "رشته تجربی",
+    place: " دبیرستان دکتر شریعتی",
+  },
+  {
+    year: "۱۴۰۱ - ۱۳۹۷",
+    cert: "کاردانی",
+    major: "رشته کامپیوتر گرایش نرم افزار",
     place: "دانشگاه آزاد اسلامی",
   },
+  {
+    year: "۱۴۰۱ - ۱۳۹۷",
+    cert: "کارشناسی",
+    major: "رشته کامپیوتر گرایش نرم افزار",
+    place: "دانشگاه آزاد اسلامی",
+  },
+  // {
+  //   year: " ... - ۱۴۰۱",
+  //   cert: "کارشناسی ",
+  //   major: "رشته کامپیوتر",
+  //   place: "دانشگاه آزاد اسلامی",
+  // },
 ];
 
 export const userComments = [
