@@ -7,9 +7,11 @@ import { Helmet } from "react-helmet-async";
 import { CustomDivider } from "../components/common/";
 import worldMap from "../assets/map.svg";
 import { ContactForm } from "../components/pages";
+import { useTheme } from "@mui/material/styles";
 
 const Contact = ({ helmetTitle }) => {
   const [loading, setLoading] = useState(false);
+  const theme = useTheme();
 
   useEffect(() => {
     setLoading(true);
@@ -23,8 +25,27 @@ const Contact = ({ helmetTitle }) => {
     <Card
       sx={{
         height: "100vh",
-        backgroundColor: "whitesmoke",
+        backgroundImage: theme.palette.mode === "dark" 
+          ? "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)"
+          : "linear-gradient(135deg, #f0f2f5 0%, #e6e9f0 50%, #eef1f5 100%)",
         overflowY: "scroll",
+        boxShadow: theme.palette.mode === "dark" 
+          ? "0 10px 30px 0 rgba(0, 0, 0, 0.8)" 
+          : "0 10px 30px 0 rgba(0, 0, 0, 0.15)",
+        borderRadius: 0,
+        "&::-webkit-scrollbar": {
+          width: "8px",
+        },
+        "&::-webkit-scrollbar-track": {
+          background: theme.palette.mode === "dark" ? "#0a0a0a" : "#f1f1f1",
+        },
+        "&::-webkit-scrollbar-thumb": {
+          background: theme.palette.mode === "dark" ? "#333" : "#888",
+          borderRadius: "4px",
+        },
+        "&::-webkit-scrollbar-thumb:hover": {
+          background: theme.palette.mode === "dark" ? "#555" : "#555",
+        },
         display: "flex",
         flexDirection: "column",
       }}
