@@ -20,10 +20,13 @@ import {
 } from 'react-icons/si';
 import { GiBearFace } from "react-icons/gi";
 import { FcGoogle } from "react-icons/fc";
+import { IoIosChatboxes } from "react-icons/io";
 
 
 
-import { MdAdminPanelSettings,MdPhonelink, MdVerified,MdOutlineDiamond } from 'react-icons/md';
+
+
+import { MdAdminPanelSettings,MdPhonelink } from 'react-icons/md';
 
 const TechIcon = ({ tech, size = 24 }) => {
   const getIcon = () => {
@@ -32,6 +35,8 @@ const TechIcon = ({ tech, size = 24 }) => {
         return <FaReact size={size} color="#61DAFB" />;
         case 'authentication':
           return <FcGoogle size={size}  />;
+          case 'chat':
+            return <IoIosChatboxes size={size}   />;
       case 'html':
       case 'html5':
         return <FaHtml5 size={size} color="#E34F26" />;

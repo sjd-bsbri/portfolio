@@ -46,7 +46,7 @@ export const courses = [
         image: TopBlog,
         link: "https://sjd-bsbri.github.io/toplearn-blog",
         info: `   در این پروژه از ریکت و متریال یو آی استفاده شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با متریال یو آی به صورت کاملا ریسپانسیو طراحی شده`,
-        technologies: ["react", "material-ui", "javascript", "user-panel","authentication", "responsive"]
+        technologies: ["react", "material-ui", "javascript", "user-panel","authentication","chat", "responsive"]
     },
     
     {
