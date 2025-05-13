@@ -21,7 +21,6 @@ import {
   RefreshRounded,
   MessageRounded,
 } from "@mui/icons-material";
-import ReCAPTCHA from "react-google-recaptcha";
 import { useFormik } from "formik";
 import { useTheme } from "@mui/material/styles";
 import { contactValidationSchema } from "../../validations/contactValidation";
@@ -37,7 +36,6 @@ const ContactForm = () => {
     email: "",
     subject: "",
     message: "",
-    recaptcha: "",
   };
 
   const formik = useFormik({
@@ -287,20 +285,6 @@ const ContactForm = () => {
             mt: 2,
           }}
         >
-          <ReCAPTCHA
-            sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
-            theme={theme.palette.mode}
-            hl="fa"
-            onChange={(value) => {
-              formik.setFieldValue("recaptcha", value);
-            }}
-          />
-          {formik.errors.recaptcha && formik.touched.recaptcha && (
-            <Typography variant="caption" color="error" sx={{ mt: -1 }}>
-              {formik.errors.recaptcha}
-            </Typography>
-          )}
-          
           <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-between' }}>
             <Tooltip title="پاک کردن فرم">
               <span>
