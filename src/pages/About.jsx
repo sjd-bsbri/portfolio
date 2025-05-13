@@ -81,7 +81,12 @@ const About = ({ helmetTitle }) => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid xs={0} sm={0} md={4} lg={4} xl={4}>
+          <Grid xs={12} sm={12} md={4} lg={4} xl={4} sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            mt: { xs: 4, sm: 4, md: 0 }
+          }}>
             <CustomAvatar avatar={avatar} fallback={"SB"} size={250} />
           </Grid>
         </Grid>
