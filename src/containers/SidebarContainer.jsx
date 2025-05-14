@@ -11,7 +11,7 @@ const SidebarContainer = ({ children }) => {
       lg={2}
       xl={2}
       sx={{
-        backgroundColor: theme.palette.mode === "dark" ? grey[900] : grey[400],
+        backgroundColor: theme.palette.mode === "dark" ? grey[900] : grey[200],
         height: "100vh",
         overflowY: "auto",
         overflowX: "hidden",
