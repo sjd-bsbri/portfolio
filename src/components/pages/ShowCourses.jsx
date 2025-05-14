@@ -141,17 +141,22 @@ const ShowCourses = ({ loading }) => {
               >
                 <Button
                   variant="outlined"
-                  size="medium"
+                  size="small"
                   color="primary"
                   target="_blank"
                   component="a"
                   href={course.link}
-                  startIcon={<LaunchIcon   />}
+                  startIcon={<LaunchIcon />}
                   sx={{
-                    borderRadius: '8px',
+                    borderRadius: '4px',
+                    padding:"3px 0 3px 9px",
                     textTransform: 'none',
                     fontWeight: 500,
                     boxShadow: 'none',
+                    '& .MuiButton-startIcon': {
+                      marginLeft: '10px',
+                      
+                    },
                     '&:hover': {
                       boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
                     }
