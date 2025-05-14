@@ -151,14 +151,17 @@ const ShowCourses = ({ loading }) => {
                     borderRadius: '4px',
                     padding:"3px 0 3px 9px",
                     textTransform: 'none',
-                    fontWeight: 500,
+                    fontWeight: 600,
                     boxShadow: 'none',
+                    color: theme.palette.mode === 'dark' ? 'primary.main' : '#1565c0',
+                    borderColor: theme.palette.mode === 'dark' ? 'primary.main' : '#1565c0',
                     '& .MuiButton-startIcon': {
                       marginLeft: '10px',
-                      
+                      color: theme.palette.mode === 'dark' ? 'primary.main' : '#1565c0',
                     },
                     '&:hover': {
                       boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+                      borderColor: theme.palette.mode === 'dark' ? 'primary.light' : '#1976d2',
                     }
                   }}
                 >
