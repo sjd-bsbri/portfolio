@@ -15,7 +15,7 @@ import {
   SiMui,
   SiRedux,
   SiPrisma,
-
+  SiAntdesign, 
   SiZod
 } from 'react-icons/si';
 import { GiBearFace } from "react-icons/gi";
@@ -75,6 +75,9 @@ const TechIcon = ({ tech, size = 24 }) => {
       case 'zarinpal':
       case 'payment':
         return <FaCreditCard size={size} color="#FFD700" />;
+      case 'antd':
+      case 'antdesign':
+        return <SiAntdesign size={size} color="#0170FE" />;
       case 'zod':
       case 'validation':
         return <SiZod size={size} color="#3068B7" />;

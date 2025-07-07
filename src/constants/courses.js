@@ -1,5 +1,5 @@
 import {
-   Eboo,Portfolio,Next,Shop,TopBlog,TopHome
+   Eboo,Portfolio,Next,Shop,TopBlog,TopHome,DomainManagement
 } from "../assets/courses";
 
 export const courses = [
@@ -34,10 +34,11 @@ export const courses = [
         id: 5,  
         title: "پروژه صفحه اصلی سایت تاپ لرن",
         image: TopHome,
-        link: "#",
-        info: ` این پروژه با تیل ویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با تیلویند به صورت کاملا ریسپانسیو طراحی شده`,
-        technologies: ["tailwind", "html", "css", "responsive"]
+        link: "https://sjd-bsbri.github.io/toplearn-home/",
+        info: ` این پروژه با ریکت و تیل ویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با تیلویند به صورت کاملا ریسپانسیو طراحی شده`,
+        technologies: ["react","tailwind", "html", "css", "responsive"]
     },
+   
 
 
     {
@@ -56,6 +57,15 @@ export const courses = [
         link: "https://sjd-bsbri.github.io/eboo",
         info: ` این پروژه با ریکت و متریال یو آی نوشته شده . از ویژگی این پروژه ، داشتن پنل کاربری هست که با وارد کردن رمز عبور ، امکان ورود به پنل کاربری وجود دارد `,
         technologies: ["react", "material-ui","javascript", "user-panel","responsive"]
+    },
+
+     {
+        id: 7,  
+        title: "پروژه مدیریت دامنه",
+        image: DomainManagement,
+        link: "https://sjd-bsbri.github.io/domain-management/",
+        info: ` این پروژه با ریکت، تایپ اسکریپت، ریداکس، انت دیزاین و تیل ویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با تیلویند به صورت کاملا ریسپانسیو طراحی شده`,
+        technologies: ["react","typescript","redux","antdesign","tailwind", "html", "css", "responsive"]
     },
   
     
