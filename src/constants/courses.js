@@ -1,5 +1,5 @@
 import {
-   Eboo,Portfolio,Next,Shop,TopBlog,TopHome,DomainManagement
+   Eboo,Portfolio,Next,Shop,TopBlog,TopHome,DomainManagement,WeatherApp
 } from "../assets/courses";
 
 export const courses = [
@@ -66,6 +66,14 @@ export const courses = [
         link: "https://sjd-bsbri.github.io/domain-management/",
         info: ` این پروژه با ریکت، تایپ اسکریپت، ریداکس، انت دیزاین و تیل ویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با تیلویند به صورت کاملا ریسپانسیو طراحی شده`,
         technologies: ["react","typescript","redux","antdesign","tailwind", "html", "css", "responsive"]
+    },
+     {
+        id: 8,  
+        title: "پروژه  هواشناسی آنلاین",
+        image: WeatherApp,
+        link: "https://sjd-bsbri.github.io/Weather-App",
+        info: ` این پروژه با ریکت و تیل ویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با تیلویند به صورت کاملا ریسپانسیو طراحی شده`,
+        technologies: ["react","tailwind", "html", "css", "responsive"]
     },
   
     
