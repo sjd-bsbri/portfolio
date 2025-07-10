@@ -1,5 +1,5 @@
 import {
-   Eboo,Portfolio,Next,Shop,TopBlog,TopHome,DomainManagement,WeatherApp
+   Eboo,Portfolio,Next,Shop,TopBlog,TopHome,DomainManagement,WeatherApp,nextCrach
 } from "../assets/courses";
 
 export const courses = [
@@ -74,6 +74,14 @@ export const courses = [
         link: "https://sjd-bsbri.github.io/Weather-App",
         info: ` این پروژه با ریکت و تیل ویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با تیلویند به صورت کاملا ریسپانسیو طراحی شده`,
         technologies: ["react","tailwind", "html", "css", "responsive"]
+    },
+     {
+        id: 9,  
+        title: "پروژه  تراورسی مدیا ",
+        image: nextCrach,
+        link: "https://sjd-bsbri.github.io/next-crach/",
+        info: ` این پروژه با نکست و ریکت نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ به صورت کاملا ریسپانسیو طراحی شده`,
+        technologies: ["nextjs","react", "html", "css", "responsive"]
     },
   
     
