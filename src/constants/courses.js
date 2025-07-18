@@ -1,5 +1,5 @@
 import {
-   Eboo,Portfolio,Next,Shop,TopBlog,TopHome,DomainManagement,WeatherApp,nextCrach
+   Eboo,Portfolio,Next,Shop,TopBlog,TopHome,DomainManagement,WeatherApp,nextCrach,movieApp
 } from "../assets/courses";
 
 export const courses = [
@@ -35,7 +35,7 @@ export const courses = [
         title: "پروژه صفحه اصلی سایت تاپ لرن",
         image: TopHome,
         link: "https://sjd-bsbri.github.io/toplearn-home/",
-        info: ` این پروژه با ریکت و تیل ویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با تیلویند به صورت کاملا ریسپانسیو طراحی شده`,
+        info: ` این پروژه با ریکت و تیلویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با تیلویند به صورت کاملا ریسپانسیو طراحی شده`,
         technologies: ["react","tailwind", "html", "css", "responsive"]
     },
    
@@ -64,7 +64,7 @@ export const courses = [
         title: "پروژه مدیریت دامنه",
         image: DomainManagement,
         link: "https://sjd-bsbri.github.io/domain-management/",
-        info: ` این پروژه با ریکت، تایپ اسکریپت، ریداکس، انت دیزاین و تیل ویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با تیلویند به صورت کاملا ریسپانسیو طراحی شده`,
+        info: ` این پروژه با ریکت، تایپ اسکریپت، ریداکس، انت دیزاین و تیلویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با تیلویند به صورت کاملا ریسپانسیو طراحی شده`,
         technologies: ["react","typescript","redux","antdesign","tailwind", "html", "css", "responsive"]
     },
      {
@@ -72,7 +72,7 @@ export const courses = [
         title: "پروژه  هواشناسی آنلاین",
         image: WeatherApp,
         link: "https://sjd-bsbri.github.io/Weather-App",
-        info: ` این پروژه با ریکت و تیل ویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با تیلویند به صورت کاملا ریسپانسیو طراحی شده`,
+        info: ` این پروژه با ریکت و تیلویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با تیلویند به صورت کاملا ریسپانسیو طراحی شده`,
         technologies: ["react","tailwind", "html", "css", "responsive"]
     },
      {
@@ -82,6 +82,14 @@ export const courses = [
         link: "https://sjd-bsbri.github.io/next-crach/",
         info: ` این پروژه با نکست و ریکت نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ به صورت کاملا ریسپانسیو طراحی شده`,
         technologies: ["nextjs","react", "html", "css", "responsive"]
+    },
+     {
+        id: 10,  
+        title: "پروژه فیلم نت ",
+        image: movieApp,
+        link: "https://sjd-bsbri.github.io/movie-app/",
+        info: ` این پروژه با نکست، ریکت، تایپ اسکریپت و تیلویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ به صورت کاملا ریسپانسیو طراحی شده`,
+        technologies: ["nextjs","react","typescript","tailwind","zod", "html", "css", "responsive"]
     },
   
     
