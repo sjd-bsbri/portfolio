@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3dcaaa78.css",
-    "main.js": "/portfolio/static/js/main.0e4f1432.js",
+    "main.js": "/portfolio/static/js/main.22953ce1.js",
     "static/media/bg002.png": "/portfolio/static/media/bg002.e8d393202e2077fd2072.png",
     "static/media/movie-app.png": "/portfolio/static/media/movie-app.2223ef983450975ad26e.png",
     "static/media/toplearnhomeProject.png": "/portfolio/static/media/toplearnhomeProject.ca9747c66d290431d8b2.png",
@@ -10,7 +10,7 @@
     "static/media/avatar02.jpg": "/portfolio/static/media/avatar02.239e46168d4579099637.jpg",
     "static/media/portfolioProject.png": "/portfolio/static/media/portfolioProject.b319674ab1cdc7fc8c74.png",
     "static/media/Weather-App.PNG": "/portfolio/static/media/Weather-App.4d19aa59fefd532d2e42.PNG",
-    "static/media/next-crach.png": "/portfolio/static/media/next-crach.b4e7ed3a1c95850db49a.png",
+    "static/media/next-crach.png": "/portfolio/static/media/next-crach.a287782c5ce30ed72cee.png",
     "static/media/shopProject.png": "/portfolio/static/media/shopProject.92ed5e847dd67deb913c.png",
     "static/media/avatar.jpg": "/portfolio/static/media/avatar.0583b4057e2b1f1e00c3.jpg",
     "static/media/domainManagement.png": "/portfolio/static/media/domainManagement.ead29adf9ce4e3352739.png",
@@ -33,10 +33,10 @@
     "static/media/html5-original.svg": "/portfolio/static/media/html5-original.8664168d5bc90b1a24396f85aadbf623.svg",
     "static/media/material-ui-1.svg": "/portfolio/static/media/material-ui-1.fd510ed8518b192069590b04e2e6348a.svg",
     "main.3dcaaa78.css.map": "/portfolio/static/css/main.3dcaaa78.css.map",
-    "main.0e4f1432.js.map": "/portfolio/static/js/main.0e4f1432.js.map"
+    "main.22953ce1.js.map": "/portfolio/static/js/main.22953ce1.js.map"
   },
   "entrypoints": [
     "static/css/main.3dcaaa78.css",
-    "static/js/main.0e4f1432.js"
+    "static/js/main.22953ce1.js"
   ]
 }
