@@ -3,14 +3,18 @@ import {
 } from "../assets/courses";
 
 export const courses = [
-    {
-        id: 1,
-        title: "  پروژه فروشگاه   ",
-        image: Shop,
-        link: "https://sjd-bsbri.github.io/shop",
-        info: " این پروژه با ریکت نوشته شده . امکان اضافه کردن ، حذف و فیلتر محصولات در این پروژه وجود دارد",
-        technologies: ["react","javascript", "html","css", "responsive"]
+
+
+     {
+        id: 10,  
+        title: "پروژه فیلم نت ",
+        image: movieApp,
+        link: "https://sjd-bsbri.github.io/movie-app/",
+        info: ` این پروژه با نکست، ریکت، تایپ اسکریپت و تیلویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ به صورت کاملا ریسپانسیو طراحی شده`,
+        technologies: ["nextjs","react","typescript","tailwind","zod", "html", "css", "responsive"]
     },
+  
+    
    
     {
         id: 2,
@@ -40,17 +44,7 @@ export const courses = [
     },
    
 
-
-    {
-        id: 4,
-        title: "پروژه بلاگ سایت تاپ لرن  ",
-        image: TopBlog,
-        link: "https://sjd-bsbri.github.io/toplearn-blog",
-        info: `   در این پروژه از ریکت و متریال یو آی استفاده شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با متریال یو آی به صورت کاملا ریسپانسیو طراحی شده`,
-        technologies: ["react", "material-ui", "javascript", "user-panel","authentication","chat", "responsive"]
-    },
-    
-    {
+  {
         id: 6,
         title: "    پروژه سایت ایبو ",
         image: Eboo,
@@ -59,38 +53,56 @@ export const courses = [
         technologies: ["react", "material-ui","javascript", "user-panel","responsive"]
     },
 
-     {
-        id: 7,  
-        title: "پروژه مدیریت دامنه",
-        image: DomainManagement,
-        link: "https://sjd-bsbri.github.io/domain-management/",
-        info: ` این پروژه با ریکت، تایپ اسکریپت، ریداکس، انت دیزاین و تیلویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با تیلویند به صورت کاملا ریسپانسیو طراحی شده`,
-        technologies: ["react","typescript","redux","antdesign","tailwind", "html", "css", "responsive"]
-    },
-     {
-        id: 8,  
-        title: "پروژه  هواشناسی آنلاین",
-        image: WeatherApp,
-        link: "https://sjd-bsbri.github.io/Weather-App",
-        info: ` این پروژه با ریکت و تیلویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با تیلویند به صورت کاملا ریسپانسیو طراحی شده`,
-        technologies: ["react","tailwind", "html", "css", "responsive"]
-    },
-     {
+ {
         id: 9,  
-        title: "پروژه  تراورسی مدیا ",
+        title: "پروژه  تیچینگ مدیا ",
         image: nextCrach,
         link: "https://sjd-bsbri.github.io/next-crach/",
         info: ` این پروژه با نکست و ریکت نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ به صورت کاملا ریسپانسیو طراحی شده`,
         technologies: ["nextjs","react", "html", "css", "responsive"]
     },
-     {
-        id: 10,  
-        title: "پروژه فیلم نت ",
-        image: movieApp,
-        link: "https://sjd-bsbri.github.io/movie-app/",
-        info: ` این پروژه با نکست، ریکت، تایپ اسکریپت و تیلویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ به صورت کاملا ریسپانسیو طراحی شده`,
-        technologies: ["nextjs","react","typescript","tailwind","zod", "html", "css", "responsive"]
+    
+  {
+        id: 8,  
+        title: "پروژه  هواشناسی آنلاین",
+        image: WeatherApp,
+        link: "https://sjd-bsbri.github.io/Weather-App",
+        info: ` این پروژه با ریکت و تیلویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ به صورت کاملا ریسپانسیو طراحی شده`,
+        technologies: ["react","tailwind", "html", "css", "responsive"]
     },
-  
+
+     
+
+     {
+        id: 1,
+        title: "  پروژه فروشگاه   ",
+        image: Shop,
+        link: "https://sjd-bsbri.github.io/shop",
+        info: " این پروژه با ریکت نوشته شده . امکان اضافه کردن ، حذف و فیلتر محصولات به سبد خرید در این پروژه وجود دارد",
+        technologies: ["react","javascript", "html","css", "responsive"]
+    },
+    
+    
+     {
+        id: 4,
+        title: "پروژه بلاگ سایت تاپ لرن  ",
+        image: TopBlog,
+        link: "https://sjd-bsbri.github.io/toplearn-blog",
+        info: `   در این پروژه از ریکت و متریال یو آی استفاده شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ با متریال یو آی به صورت کاملا ریسپانسیو طراحی شده`,
+        technologies: ["react", "material-ui", "javascript", "user-panel","authentication","chat", "responsive"]
+    },
+    
+ 
+    {
+        id: 7,  
+        title: "پروژه مدیریت دامنه",
+        image: DomainManagement,
+        link: "https://sjd-bsbri.github.io/domain-management/",
+        info: ` این پروژه با ریکت، تایپ اسکریپت، ریداکس، انت دیزاین و تیلویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ به صورت کاملا ریسپانسیو طراحی شده`,
+        technologies: ["react","typescript","redux","antdesign","tailwind", "html", "css", "responsive"]
+    },
+   
+    
+   
     
 ];
