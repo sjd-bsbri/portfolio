@@ -1,5 +1,5 @@
 import {
-   Eboo,Portfolio,Next,Shop,TopBlog,TopHome,DomainManagement,WeatherApp,nextCrach,movieApp
+   Eboo,Portfolio,Next,Shop,TopBlog,TopHome,DomainManagement,WeatherApp,nextCrach,movieApp,quizOnline
 } from "../assets/courses";
 
 export const courses = [
@@ -92,6 +92,7 @@ export const courses = [
         technologies: ["react", "material-ui", "javascript", "user-panel","authentication","chat", "responsive"]
     },
     
+   
  
     {
         id: 7,  
@@ -101,7 +102,15 @@ export const courses = [
         info: ` این پروژه با ریکت، تایپ اسکریپت، ریداکس، انت دیزاین و تیلویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ به صورت کاملا ریسپانسیو طراحی شده`,
         technologies: ["react","typescript","redux","antdesign","tailwind", "html", "css", "responsive"]
     },
-   
+    
+    {
+        id: 11,  
+        title: "پروژه آزمون آنلاین",
+        image: quizOnline,
+        link: "https://sjd-bsbri.github.io/quiz-app-NEXT/",
+        info: ` این پروژه با نکست، ریکت، تایپ اسکریپت، زاستند و تیلویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ به صورت کاملا ریسپانسیو طراحی شده`,
+        technologies: ["nextjs","react","typescript","zustand","tailwind", "html", "css", "responsive"]
+    },
     
    
     
