@@ -1,109 +1,105 @@
-import { Card, CardContent } from "@mui/material";
-import Grid from "@mui/material/Unstable_Grid2";
-import avatar from "../assets/avatar02.jpg";
-import { CodeRounded, SelfImprovementRounded } from "@mui/icons-material";
-import { DevInfo, DevWorkCount, Skills } from "../components/pages";
+import { Box, Typography, useTheme, keyframes, Grid, Divider } from "@mui/material";
 import { Helmet } from "react-helmet-async";
-import { useTheme } from "@mui/material/styles";
-import { CustomAvatar, CustomDivider } from "../components/common";
+
+import { DevInfo, Skills } from "../components/pages";
+import { CustomAvatar } from "../components/common";
+import avatar from "../assets/avatar02.jpg";
+
+const fadeInUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+const AnimatedSection = ({ children, delay = 0, sx }) => (
+  <Box sx={{
+    ...sx,
+    opacity: 0,
+    animation: `${fadeInUp} 0.8s ease-out forwards`,
+    animationDelay: `${delay}s`,
+  }}>
+    {children}
+  </Box>
+);
 
 const About = ({ helmetTitle }) => {
   const theme = useTheme();
 
   return (
-    <Card
+    <Box
       sx={{
         height: "100vh",
         backgroundImage: theme.palette.mode === "dark" 
           ? "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)"
           : "linear-gradient(135deg, #f0f2f5 0%, #e6e9f0 50%, #eef1f5 100%)",
-        overflowY: "scroll",
-        boxShadow: theme.palette.mode === "dark" 
-          ? "0 10px 30px 0 rgba(0, 0, 0, 0.8)" 
-          : "0 10px 30px 0 rgba(0, 0, 0, 0.15)",
-        borderRadius: 0,
-        "&::-webkit-scrollbar": {
-          width: "8px",
-        },
-        "&::-webkit-scrollbar-track": {
-          background: theme.palette.mode === "dark" ? "#0a0a0a" : "#f1f1f1",
-        },
+        color: 'text.primary',
+        overflowY: "auto",
+        "&::-webkit-scrollbar": { width: '6px' },
+        "&::-webkit-scrollbar-track": { background: 'transparent' },
         "&::-webkit-scrollbar-thumb": {
-          background: theme.palette.mode === "dark" ? "#333" : "#888",
-          borderRadius: "4px",
-        },
-        "&::-webkit-scrollbar-thumb:hover": {
-          background: theme.palette.mode === "dark" ? "#555" : "#555",
+          background: theme.palette.mode === 'dark' ? '#444' : '#ccc',
+          borderRadius: '3px'
         },
       }}
     >
       <Helmet>
-        <title> {helmetTitle} </title>
+        <title>{helmetTitle}</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" />
+        <style>{`body { font-family: 'Vazirmatn', sans-serif !important; }`}</style>
       </Helmet>
-      <CardContent>
-        <Grid container sx={{ mx: 3 }}>
-          <Grid xs={12} sm={12} md={8} lg={8} xl={8}>
-            <CustomDivider
-              align="right"
-              bColor="primary.main"
-              cColor="primary"
-              icon={<CodeRounded />}
-              text=" توسعه دهنده و برنامه نویس وب"
-            />
 
-            <Grid
-              container
-              sx={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
-              <Grid
-                xs={4}
-                sm={4}
-                md={3}
-                lg={3}
-                sx={{
-                  mt: 3,
-                  display: {
-                    xs: "none",
-                    sm: "block",
-                    md: "block",
-                  },
-                }}
-              >
-                <DevWorkCount />
-              </Grid>
+      <Box sx={{ maxWidth: '1200px', mx: 'auto', p: { xs: 3, md: 6 } }}>
 
-              <Grid xs={12} sm={8} md={9} lg={9}>
-                <DevInfo />
-              </Grid>
-            </Grid>
+        <Grid container spacing={6} alignItems="center" direction={{xs: 'column-reverse', md: 'row'}}>
+          <Grid item xs={12} md={5}>
+             <AnimatedSection delay={0.2}>
+                <Box sx={{display: 'flex', justifyContent: 'center'}}>
+                    <CustomAvatar 
+                        avatar={avatar} 
+                        fallback={"SB"} 
+                        size={280}
+                        sx={{ boxShadow: '0 10px 40px rgba(0,0,0,0.2)' }}
+                    />
+                </Box>
+             </AnimatedSection>
           </Grid>
-          <Grid xs={12} sm={12} md={4} lg={4} xl={4} sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            mt: { xs: 4, sm: 4, md: 0 }
-          }}>
-            <CustomAvatar avatar={avatar} fallback={"SB"} size={250} />
+          
+          <Grid item xs={12} md={7}>
+            <AnimatedSection delay={0}>
+              <DevInfo />
+            </AnimatedSection>
           </Grid>
         </Grid>
-        <Grid container>
-          <Grid sx={{ width: 1, mt: 1 }}>
-            <CustomDivider
-              align="center"
-              bColor="secondary.main"
-              cColor="secondary"
-              icon={<SelfImprovementRounded />}
-              text=" مهارت های من"
-            />
-            <Skills />
-          </Grid>
-        </Grid>
-      </CardContent>
-    </Card>
+        
+        <Box sx={{ mt: 8 }}>
+            <AnimatedSection delay={0.4}>
+                <Typography variant="h4" fontWeight="bold" sx={{ mb: 3, textAlign: 'center' }}>
+                  مهارت‌ها  
+                </Typography>
+                <Grid container spacing={4}>
+                    <Grid item xs={12} md={6}>
+                        <Skills column={1} />
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <Skills column={2} />
+                    </Grid>
+                </Grid>
+            </AnimatedSection>
+        </Box>
+        
+      </Box>
+    </Box>
   );
 };
+
 export default About;
+
+
+
+
+

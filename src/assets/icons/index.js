@@ -9,3 +9,5 @@ export { default as MUIIcon } from "./material-ui-1.svg";
 export { default as NextIcon } from "./next-js.svg";
 export { default as TailwindIcon } from "./tailwindcss.svg";
 export { default as TypescriptIcon } from "./typescript.svg";
+export { default as zod } from "./zod.svg";
+export { default as zustand } from "./zustand.svg";

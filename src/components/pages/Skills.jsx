@@ -1,148 +1,67 @@
 import { useState, useEffect } from "react";
 import { devSkills } from "../../constants/skills";
 import Skill from "./Skill";
-const Skills = () => {
-  const [javascript, setJavascript] = useState(0);
-  const [html, setHtml] = useState(0);
-  const [css, setCss] = useState(0);
-  const [reactJs, setReactJs] = useState(0);
-  const [git, setGit] = useState(0);
-  const [laravel, setLaravel] = useState(0);
-  const [mui, setMui] = useState(0);
-  const [next, setNext] = useState(0);
-  const [tailwind, setTailwind] = useState(0);
-  const [typescript, setTypescript] = useState(0);
+
+const Skills = ({ column }) => {
+  const [skills, setSkills] = useState({
+    javascript: 0, html: 0, css: 0, reactJs: 0, git: 0,
+    laravel: 0, mui: 0, next: 0, tailwind: 0, typescript: 0,zod:0,zustand:0
+  });
 
   useEffect(() => {
+    const targets = {
+      javascript: 70, html: 80, css: 75, reactJs: 65, git: 55,
+      laravel: 40, mui: 75, next: 60, tailwind: 70, typescript: 50,zustand:45,zod:60
+    };
+
     const timer = setInterval(() => {
-      setJavascript((oldProgress) => {
-        const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 70);
-      });
-
-      setHtml((oldProgress) => {
-        const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 80);
-      });
-
-      setCss((oldProgress) => {
-        const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 75);
-      });
-
-      setLaravel((oldProgress) => {
-        const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 40);
-      });
-      setMui((oldProgress) => {
-        const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 75);
-      });
-      setNext((oldProgress) => {
-        const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 60);
-      });
-      setTailwind((oldProgress) => {
-        const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 70);
-      });
-
-      setReactJs((oldProgress) => {
-        const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 65);
-      });
-      setTypescript((oldProgress) => {
-        const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 50);
-      });
-     
-      setGit((oldProgress) => {
-        const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 55);
+      setSkills(prevSkills => {
+        let newSkills = {};
+        for (const key in prevSkills) {
+          const diff = Math.random() * 10;
+          newSkills[key] = Math.min(prevSkills[key] + diff, targets[key]);
+        }
+        return newSkills;
       });
     }, 100);
 
-    return () => {
-      clearInterval(timer);
-    };
+    return () => clearInterval(timer);
   }, []);
 
-  const { htmlSkill, cssSkill, reactSkill, jsSkill, 
-     gitSkill,laravelSkill,muiSkill,nextSkill,tailwindSkill,typescriptSkill  } =
-    devSkills;
+  const allSkills = [
+    { id: 'react', data: devSkills.reactSkill, value: skills.reactJs },
+    { id: 'html', data: devSkills.htmlSkill, value: skills.html },
+    { id: 'css', data: devSkills.cssSkill, value: skills.css },
+    { id: 'js', data: devSkills.jsSkill, value: skills.javascript },
+    { id: 'mui', data: devSkills.muiSkill, value: skills.mui },
+    { id: 'typescript', data: devSkills.typescriptSkill, value: skills.typescript },
+    { id: 'next', data: devSkills.nextSkill, value: skills.next },
+    { id: 'tailwind', data: devSkills.tailwindSkill, value: skills.tailwind },
+    { id: 'git', data: devSkills.gitSkill, value: skills.git },
+    { id: 'zod', data: devSkills.zodSkill, value: skills.zod },
+    { id: 'zustand', data: devSkills.zustandSkill, value: skills.zustand },
+    
+    { id: 'laravel', data: devSkills.laravelSkill, value: skills.laravel },
+  ];
+
+  const midIndex = Math.ceil(allSkills.length / 2);
+  const skillsToRender = column === 1 
+    ? allSkills.slice(0, midIndex) 
+    : allSkills.slice(midIndex);
+
   return (
     <>
-      <Skill
-        name={htmlSkill.name}
-        icon={htmlSkill.icon}
-        color={htmlSkill.color}
-        value={html}
-      />
-      <Skill
-        name={cssSkill.name}
-        icon={cssSkill.icon}
-        color={cssSkill.color}
-        value={css}
-      />
-      <Skill
-        name={jsSkill.name}
-        icon={jsSkill.icon}
-        color={jsSkill.color}
-        value={javascript}
-      />
-      <Skill
-        name={typescriptSkill.name}
-        icon={typescriptSkill.icon}
-        color={typescriptSkill.color}
-        value={typescript}
-      />
-
-<Skill
-        name={reactSkill.name}
-        icon={reactSkill.icon}
-        color={reactSkill.color}
-        value={reactJs}
-      />
-
-<Skill
-        name={nextSkill.name}
-        icon={nextSkill.icon}
-        color={nextSkill.color}
-        value={next}
-      />
-
-<Skill
-        name={muiSkill.name}
-        icon={muiSkill.icon}
-        color={muiSkill.color}
-        value={mui}
-      />
-     
-
-<Skill
-        name={tailwindSkill.name}
-        icon={tailwindSkill.icon}
-        color={tailwindSkill.color}
-        value={tailwind}
-      />
-
-
-
-     
-      <Skill
-        name={gitSkill.name}
-        icon={gitSkill.icon}
-        color={gitSkill.color}
-        value={git}
-      />
-
-<Skill
-        name={laravelSkill.name}
-        icon={laravelSkill.icon}
-        color={laravelSkill.color}
-        value={laravel}
-      />
+      {skillsToRender.map(skill => (
+        <Skill
+          key={skill.id}
+          name={skill.data.name}
+          icon={skill.data.icon}
+          color={skill.data.color}
+          value={skill.value}
+        />
+      ))}
     </>
   );
 };
+
 export default Skills;

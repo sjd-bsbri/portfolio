@@ -9,6 +9,8 @@ import {
   NextIcon,
   LaravelIcon,
   TypescriptIcon,
+  zod,
+  zustand
 } from "../assets/icons";
 
 export const devSkills = {
@@ -72,6 +74,18 @@ export const devSkills = {
     id: 9,
     name: "Typescript",
     icon: TypescriptIcon,
+    color: "primary",
+  },
+  zustandSkill: {
+    id: 10,
+    name: "zustand",
+    icon: zustand,
+    color: "error",
+  },
+  zodSkill: {
+    id: 11,
+    name: "zod",
+    icon: zod,
     color: "primary",
   },
 };
