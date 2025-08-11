@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3dcaaa78.css",
-    "main.js": "/portfolio/static/js/main.2f732442.js",
+    "main.js": "/portfolio/static/js/main.79a889ae.js",
     "static/media/bg002.png": "/portfolio/static/media/bg002.e8d393202e2077fd2072.png",
     "static/media/movie-app.png": "/portfolio/static/media/movie-app.2223ef983450975ad26e.png",
     "static/media/toplearnhomeProject.png": "/portfolio/static/media/toplearnhomeProject.ca9747c66d290431d8b2.png",
@@ -13,6 +13,7 @@
     "static/media/Weather-App.PNG": "/portfolio/static/media/Weather-App.4d19aa59fefd532d2e42.PNG",
     "static/media/next-crach.png": "/portfolio/static/media/next-crach.a287782c5ce30ed72cee.png",
     "static/media/shopProject.png": "/portfolio/static/media/shopProject.92ed5e847dd67deb913c.png",
+    "static/media/zustand.svg": "/portfolio/static/media/zustand.64fe0dd179fc5de1dd0faebe0281eb02.svg",
     "static/media/avatar.jpg": "/portfolio/static/media/avatar.0583b4057e2b1f1e00c3.jpg",
     "static/media/domainManagement.png": "/portfolio/static/media/domainManagement.ead29adf9ce4e3352739.png",
     "static/media/ebooProject.png": "/portfolio/static/media/ebooProject.e54a23b97e4ac6d09c5a.png",
@@ -21,6 +22,7 @@
     "static/media/slick.svg": "/portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/laravel-2.svg": "/portfolio/static/media/laravel-2.ba995bd47e3a7cc141cc1c9aaa1ac583.svg",
+    "static/media/zod.svg": "/portfolio/static/media/zod.6800627c7fcbaf33a50c41e2eae8569a.svg",
     "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/nodejs-original.svg": "/portfolio/static/media/nodejs-original.10c9e2aa0ca7edf36fceae25fec038a1.svg",
     "static/media/next-js.svg": "/portfolio/static/media/next-js.1b2b52c044b9dcea988e68b966864c5a.svg",
@@ -34,10 +36,10 @@
     "static/media/html5-original.svg": "/portfolio/static/media/html5-original.8664168d5bc90b1a24396f85aadbf623.svg",
     "static/media/material-ui-1.svg": "/portfolio/static/media/material-ui-1.fd510ed8518b192069590b04e2e6348a.svg",
     "main.3dcaaa78.css.map": "/portfolio/static/css/main.3dcaaa78.css.map",
-    "main.2f732442.js.map": "/portfolio/static/js/main.2f732442.js.map"
+    "main.79a889ae.js.map": "/portfolio/static/js/main.79a889ae.js.map"
   },
   "entrypoints": [
     "static/css/main.3dcaaa78.css",
-    "static/js/main.2f732442.js"
+    "static/js/main.79a889ae.js"
   ]
 }

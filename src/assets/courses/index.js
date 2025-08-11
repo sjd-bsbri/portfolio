@@ -9,4 +9,5 @@ export { default as WeatherApp } from "./Weather-App.PNG";
 export { default as nextCrach } from "./next-crach.png";
 export { default as movieApp } from "./movie-app.png";
 export { default as quizOnline } from "./quiz-online.png";
+export { default as musicianPortfolio } from "./musician-portfolio.PNG";
 
