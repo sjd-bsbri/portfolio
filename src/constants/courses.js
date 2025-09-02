@@ -47,7 +47,7 @@ export const courses = [
         id: 12,
         title: "    پروژه  پورتفولیو ",
         image: musicianPortfolio,
-        link: "https://sjd-bsbri.github.io/ehsan-basabri-musician",
+        link: "https://ehsan-basabri-musician.vercel.app/",
         info: ` این پروژه با نکست، ریکت، تایپ اسکریپت و تیلویند نوشته شده و در سایزهای مختلف صفحه نمایش مثل موبایل ، تبلت و لپتاپ به صورت کاملا ریسپانسیو طراحی شده `,
         technologies: ["nextjs", "react", "typescript", "tailwind", "html", "css", "responsive"]
     },
