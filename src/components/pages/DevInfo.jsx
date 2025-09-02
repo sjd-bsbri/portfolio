@@ -33,7 +33,7 @@ const DevInfo = () => {
       <Info>شهر : مشهد</Info>
       <Info>abccnn09@gmail.com
         : آدرس ایمیل</Info>
-      <Info>شماره موبایل : ۰۹۱۳۹۳۱۳۹۳۳</Info>
+      <Info>شماره موبایل : ۰۹۱۲۳۴۵۶۷۸۹</Info>
     </>
   );
 };
